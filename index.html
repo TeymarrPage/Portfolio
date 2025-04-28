@@ -12,23 +12,23 @@
       <div class="profile-wrapper">
         <img src="profilepicture.jpg" alt="Malek's profile photo" class="profile-pic">
       </div>
-      <h1>Malek</h1>
+      <h1>Teymarr (He/Him)</h1>
       <p class="subtitle">he/him</p>
 
       <div class="links">
-        <a href="https://instagram.com/teymarrpage" target="_blank">Instagram</a>
-        <a href="mailto:teymarr@aol.com">Email Me</a>
-        <a href="https://www.linkedin.com/in/teymarr-p-7b75a4362/" target="_blank">LinkedIn</a>
+        <a class="button" href="https://instagram.com/teymarrpage" target="_blank">Instagram</a>
+        <a class="button" href="mailto:teymarr@aol.com">Email Me</a>
+        <a class="button" href="https://www.linkedin.com/in/teymarr-p-7b75a4362/" target="_blank">LinkedIn</a>
       </div>
 
       <div class="credentials">
         <h2>B.Sc in Nutrition & Health</h2>
-        <p>Graduate in evidence-based, science-driven nutrition with a passion for plant-based wellness education.</p>
+        <p>Proficient in gut microbiome science, macronutrient balancing, holistic health strategies, and evidence-based dietary interventions.</p>
 
         <ul>
-          <li>NASM Certified Personal Trainer</li>
-          <li>NASM Certified Nutrition Coach</li>
-          <li>CPR/AED Certified</li>
+          <li>NASM Certified Personal Trainer - Skilled in strength training, biomechanics, and fitness programming tailored to individual client goals.</li>
+          <li>NASM Certified Nutrition Coach - Trained in creating sustainable meal plans, nutrient timing, and behavior-change coaching around food habits.</li>
+          <li>CPR/AED Certified - Certified to perform life-saving emergency response procedures including CPR and AED operation.</li>
         </ul>
       </div>
     </div>
@@ -43,7 +43,10 @@
         <h2>My Recipes</h2>
         <ul>
           {% for post in site.posts %}
-            <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+            <li>
+              <a href="{{ post.url }}">{{ post.title }}</a><br>
+              <small>{{ post.date | date: "%B %d, %Y" }} - {{ post.description }}</small>
+            </li>
           {% endfor %}
         </ul>
       </div>
@@ -51,4 +54,3 @@
   </div>
 </body>
 </html>
-
