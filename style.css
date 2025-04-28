@@ -3,8 +3,8 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fffefc;
-  color: #333;
+  background-color: #000000;
+  color: #fff;
 }
 
 /* Layout */
@@ -28,10 +28,10 @@ body {
 .profile-pic {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 10%;
   object-fit: cover;
   border: 3px solid #e0e0e0;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
 
 h1 {
@@ -54,7 +54,7 @@ h1 {
 }
 
 .links a {
-  color: #3366cc;
+  color: #ffffff;
   text-decoration: none;
   font-weight: 500;
 }
@@ -67,13 +67,13 @@ h1 {
 .credentials h2 {
   margin-bottom: 10px;
   font-size: 1.2em;
-  color: #222;
+  color: #fff;
 }
 
 .credentials p {
   margin-bottom: 15px;
   font-size: 0.95em;
-  color: #555;
+  color: #878787;
 }
 
 .credentials ul {
@@ -112,7 +112,7 @@ h1 {
 
 .blog a {
   text-decoration: none;
-  color: #2a5d84;
+  color: #ffffff;
 }
 
 .blog a:hover {
