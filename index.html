@@ -42,24 +42,31 @@ layout: default
     </div>
 
     <div class="right">
-      <div class="story">
-        <h2>My Weight Loss Story</h2>
-        <p>I started my journey in June 2024 at 340 pounds. Through discipline, plant-based eating, and science-backed wellness practices, I lost over 180 pounds. Now, I help others nourish their body without obsession.</p>
-      </div>
-
-      <div class="blog">
-        <h2>My Recipes</h2>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a><br>
-              <small>{{ post.date | date: "%B %d, %Y" }} – {{ post.description }}</small>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
+  <div class="story">
+    <h2>My Weight Loss Story</h2>
+    <p>I started my journey in June 2024 at 340 pounds. Through discipline, plant-based eating, and science-backed wellness practices, I lost over 180 pounds. Now, I help others nourish their body without obsession.</p>
   </div>
-</body>
-</html>
 
+  <div class="credentials">
+    <h2>B.Sc in Nutrition & Health</h2>
+    <p>Proficient in gut microbiome science, macronutrient balancing, holistic health strategies, and evidence-based dietary interventions.</p>
+
+    <ul>
+      <li><strong>NASM Certified Personal Trainer</strong> - Skilled in strength training, biomechanics, and fitness programming tailored to individual client goals.</li>
+      <li><strong>NASM Certified Nutrition Coach</strong> - Trained in creating sustainable meal plans, nutrient timing, and behavior-change coaching around food habits.</li>
+      <li><strong>CPR/AED Certified</strong> - Certified to perform life-saving emergency response procedures including CPR and AED operation.</li>
+    </ul>
+  </div>
+
+  <div class="blog">
+    <h2>My Recipes</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a><br>
+          <small>{{ post.date | date: "%B %d, %Y" }} – {{ post.description }}</small>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
