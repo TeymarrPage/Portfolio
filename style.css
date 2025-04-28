@@ -26,13 +26,15 @@ body {
 
 /* Profile Section */
 .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 180px;
+  height: 180px;
   border-radius: 10%;
-  object-fit: cover;
+  object-fit: contain; /* changed from 'cover' */
+  object-position: top; /* aligns image from the top down */
   border: 3px solid #e0e0e0;
   margin-bottom: 25px;
 }
+
 
 h1 {
   font-size: 2.2em;
