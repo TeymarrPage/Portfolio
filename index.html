@@ -26,9 +26,9 @@
         <p>Proficient in gut microbiome science, macronutrient balancing, holistic health strategies, and evidence-based dietary interventions.</p>
 
         <ul>
-          <li>NASM Certified Personal Trainer - Skilled in strength training, biomechanics, and fitness programming tailored to individual client goals.</li>
-          <li>NASM Certified Nutrition Coach - Trained in creating sustainable meal plans, nutrient timing, and behavior-change coaching around food habits.</li>
-          <li>CPR/AED Certified - Certified to perform life-saving emergency response procedures including CPR and AED operation.</li>
+          <li><strong>NASM Certified Personal Trainer</strong> - Skilled in strength training, biomechanics, and fitness programming tailored to individual client goals.</li>
+          <li><strong>NASM Certified Nutrition Coach</strong> - Trained in creating sustainable meal plans, nutrient timing, and behavior-change coaching around food habits.</li>
+          <li><strong>CPR/AED Certified</strong> - Certified to perform life-saving emergency response procedures including CPR and AED operation.</li>
         </ul>
       </div>
     </div>
@@ -40,17 +40,14 @@
       </div>
 
       <div class="blog">
-        <h2>My Recipes</h2>
-        <ul>
-          {% for post in site.posts %}
-            <li>
-              <a href="{{ post.url }}">{{ post.title }}</a><br>
-              <small>{{ post.date | date: "%B %d, %Y" }} - {{ post.description }}</small>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+  <h2>My Recipes</h2>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a><br>
+        <small>{{ post.date | date: "%B %d, %Y" }} – {{ post.description }}</small>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
