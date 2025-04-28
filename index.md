@@ -1,86 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Malek | Nutrition & Wellness</title>
-  <style>
-    body {
-      font-family: 'Helvetica Neue', sans-serif;
-      background: #fff;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .profile-pic {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 20px;
-      border: 2px solid #eee;
-    }
-    h1 {
-      margin: 0;
-      font-size: 2.2em;
-      font-weight: bold;
-    }
-    .subtitle {
-      margin-top: 5px;
-      font-size: 1em;
-      color: #666;
-    }
-    .credentials {
-      margin-top: 20px;
-      font-size: 1.1em;
-      font-weight: 500;
-      color: #444;
-    }
-    .section {
-      margin-top: 50px;
-      text-align: left;
-    }
-    .section h2 {
-      font-size: 1.4em;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-    }
-    .section p {
-      line-height: 1.6;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="container">
-    <img src="your-photo.jpg" alt="Profile Photo" class="profile-pic">
-    <h1>Malek</h1>
-    <div class="subtitle">he/him · B.Sc Nutrition & Health</div>
-    <div class="credentials">
-      NASM Certified Personal Trainer (CPT) · Certified Nutrition Coach (CNC) · CPR/AED Certified
+    <div class="left">
+      <img src="profile.jpg" alt="Malek's profile photo" class="profile-pic">
+      <h1>Malek</h1>
+      <p class="subtitle">he/him</p>
+
+      <div class="links">
+        <a href="https://instagram.com/yourhandle" target="_blank">Instagram</a>
+        <a href="mailto:your@email.com">Email Me</a>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+      </div>
+
+      <div class="credentials">
+        <h2>B.Sc in Nutrition & Health</h2>
+        <p>Graduate in evidence-based, science-driven nutrition with a passion for plant-based wellness education.</p>
+
+        <ul>
+          <li>NASM Certified Personal Trainer</li>
+          <li>NASM Certified Nutrition Coach</li>
+          <li>CPR/AED Certified</li>
+        </ul>
+      </div>
     </div>
 
-    <div class="section">
-      <h2>About Me</h2>
-      <p>
-        I'm a nutrition and wellness educator passionate about helping others understand food, nutrients, and holistic health.
-        With over 180 pounds lost on my own journey and a science-backed approach to wellness, I'm here to share what I’ve learned.
-      </p>
-    </div>
+    <div class="right">
+      <div class="story">
+        <h2>My Weight Loss Story</h2>
+        <p>I started my journey in June 2024 at 340 pounds. Through discipline, plant-based eating, and science-backed wellness practices, I lost over 180 pounds. Now, I help others nourish their body without obsession.</p>
+      </div>
 
-    <div class="section">
-      <h2>Certifications</h2>
-      <ul>
-        <li>NASM Certified Personal Trainer (CPT)</li>
-        <li>NASM Certified Nutrition Coach (CNC)</li>
-        <li>CPR/AED Certified</li>
-        <li>Python Practitioner (Python Institute)</li>
-      </ul>
+      <div class="blog">
+        <h2>My Recipes</h2>
+        <ul>
+          <li><a href="/2025-04-28-title">Rolled Oats Banana Bread</a></li>
+          <!-- Add more blog post links here -->
+        </ul>
+      </div>
     </div>
   </div>
 </body>
