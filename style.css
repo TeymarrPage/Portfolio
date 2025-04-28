@@ -26,15 +26,16 @@ body {
 
 /* Profile Section */
 .profile-pic {
-  width: 200px; /* slightly larger */
-  height: 200px; /* slightly larger */
-  border-radius: 10%;
-  object-fit: cover; /* changed from 'contain' for better image fill */
+  width: 220px; /* or 250px if you want bigger */
+  height: auto; /* let the height adjust naturally */
+  border-radius: 12px; /* keeps it slightly rounded but not forced */
+  object-fit: cover;
   object-position: center;
   border: 5px solid #e0e0e0;
   margin-bottom: 30px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* added shadow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
 
 /* Typography */
 h1 {
