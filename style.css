@@ -3,7 +3,7 @@ body {
   font-family: 'Helvetica Neue', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #000000;
+  background-color: #1a1a1a; /* darkened gray */
   color: #fff;
 }
 
@@ -13,37 +13,38 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1100px;
+  max-width: 1200px; /* expanded max width */
   margin: auto;
   padding: 40px 20px;
-  gap: 40px;
+  gap: 50px; /* increased gap between sections */
 }
 
 .left, .right {
   flex: 1;
-  min-width: 300px;
+  min-width: 320px; /* increased minimum width for better spacing */
 }
 
 /* Profile Section */
 .profile-pic {
-  width: 180px;
-  height: 180px;
+  width: 200px; /* slightly larger */
+  height: 200px; /* slightly larger */
   border-radius: 10%;
-  object-fit: contain; /* changed from 'cover' */
-  object-position: top; /* aligns image from the top down */
-  border: 3px solid #e0e0e0;
-  margin-bottom: 25px;
+  object-fit: cover; /* changed from 'contain' for better image fill */
+  object-position: center;
+  border: 5px solid #e0e0e0;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* added shadow */
 }
 
-
+/* Typography */
 h1 {
-  font-size: 2.2em;
-  margin: 0;
+  font-size: 2.5em; /* increased font size */
+  margin-bottom: 10px; /* added bottom margin */
 }
 
 .subtitle {
-  font-size: 1em;
-  color: #777;
+  font-size: 1.2em; /* increased font size for better readability */
+  color: #bbb; /* slightly lighter color */
   margin-bottom: 20px;
 }
 
@@ -51,56 +52,59 @@ h1 {
 .links {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px; /* increased space between links */
   margin-bottom: 30px;
 }
 
 .links a {
-  color: #ffffff;
+  color: #fff;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 600; /* increased font weight */
+  font-size: 1.1em; /* slightly larger font size */
 }
 
 .links a:hover {
   text-decoration: underline;
+  color: #f4a261; /* color change on hover for better interactivity */
 }
 
 /* Credentials Section */
 .credentials h2 {
-  margin-bottom: 10px;
-  font-size: 1.2em;
+  margin-bottom: 15px;
+  font-size: 1.4em; /* larger heading size */
   color: #fff;
 }
 
 .credentials p {
-  margin-bottom: 15px;
-  font-size: 0.95em;
-  color: #878787;
+  margin-bottom: 20px;
+  font-size: 1em;
+  color: #ccc; /* lighter color for text */
 }
 
 .credentials ul {
   list-style: disc inside;
-  padding-left: 0;
+  padding-left: 20px; /* added padding */
 }
 
 .credentials li {
-  margin-bottom: 6px;
+  margin-bottom: 10px; /* increased space between items */
 }
 
 /* Story & Blog */
 .story, .blog {
-  margin-bottom: 40px;
+  margin-bottom: 50px; /* added more spacing */
 }
 
 .story h2, .blog h2 {
-  font-size: 1.4em;
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
+  font-size: 1.5em; /* slightly larger headers */
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 8px;
+  margin-bottom: 20px; /* increased bottom margin */
 }
 
 .story p {
-  line-height: 1.6;
+  line-height: 1.8; /* improved line spacing */
+  font-size: 1.1em; /* increased font size */
 }
 
 .blog ul {
@@ -109,14 +113,50 @@ h1 {
 }
 
 .blog li {
-  margin-bottom: 10px;
+  margin-bottom: 15px; /* more space between blog items */
 }
 
 .blog a {
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
+  font-size: 1.1em; /* slightly larger font size */
 }
 
 .blog a:hover {
   text-decoration: underline;
+  color: #f4a261; /* hover color */
 }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .left, .right {
+    min-width: 100%;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .links a {
+    font-size: 1em;
+  }
+
+  .credentials h2 {
+    font-size: 1.3em;
+  }
+
+  .story h2, .blog h2 {
+    font-size: 1.3em;
+  }
+}
+
